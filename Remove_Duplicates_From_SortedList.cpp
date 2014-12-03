@@ -18,15 +18,14 @@ public:
        if(head==NULL) return NULL;
        ListNode* prev = head;
        ListNode* curr = prev->next;
-       while(prev!=NULL)
+       while(prev!=NULL) 
        {
-             while(curr!=NULL&&(curr->val==prev->val))
+             while(curr!=NULL&&(curr->val==prev->val)) //找到和prev节点不同的第一个节点，然后使prev->next=curr;
             {
                  curr = curr->next;
             }
             prev->next = curr;
-            curr = prev->next;
-            prev=prev->next;
+            prev = prev->next;
        }
        return head;
     }
