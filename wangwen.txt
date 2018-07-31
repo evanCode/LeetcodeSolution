@@ -1,3 +1,0 @@
-this is a test file
-add a line in wangwen.txt
-add second line in wangwen.txt
